@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4ff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #003c8f;
+}
+
+form {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h3 {
+  color: #003366;
+}
+
+/* Nombre más grande */
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  font-size: 18px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004acc;
+}
+
+#resultado {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.incorrecta {
+  color: red;
+  font-weight: bold;
+}
+
+.correcta {
+  color: green;
+  font-weight: bold;
+}

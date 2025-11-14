@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examen Segundo Parcial</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Examen: Segundo Parcial de Programación JS<br>Profesor: Ing. José Juan Segundo</h1>
+
+  <form action="https://formsubmit.co/josejuansegundo27@gmail.com" method="POST">
+
+      <!-- Configuración de FormSubmit -->
+      <input type="hidden" name="_subject" value="Examen Segundo Parcial - Programación JS">
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Campo donde pondremos la calificación para enviarla -->
+      <input type="hidden" id="calificacionFinal" name="calificacionFinal" value="">
+      <input type="hidden" id="resumenAlumno" name="resumenAlumno">
+      <h3>Nombre Completo:</h3>
+      <input type="text" name="nombre" required>
+
+      <h3>1. ¿Se usa para imprimir un mensaje en la página web?</h3>
+      <label><input type="radio" name="p1" value="document.write"> document.write</label><br>
+      <label><input type="radio" name="p1" value="console.log"> console.log</label><br>
+      <label><input type="radio" name="p1" value="alert"> alert</label>
+
+      <h3>2. ¿Qué comando muestra una ventana que recibe una palabra y la guarda en una variable?</h3>
+      <label><input type="radio" name="p2" value="prompt"> prompt</label><br>
+      <label><input type="radio" name="p2" value="alert"> alert</label><br>
+      <label><input type="radio" name="p2" value="confirm"> confirm</label>
+
+      <h3>3. Variable cuyo valor no puede variar:</h3>
+      <label><input type="radio" name="p3" value="let"> let</label><br>
+      <label><input type="radio" name="p3" value="var"> var</label><br>
+      <label><input type="radio" name="p3" value="const"> const</label>
+
+      <h3>4. Tipo de dato que permite guardar todo tipo de valores:</h3>
+      <label><input type="radio" name="p4" value="array"> Array</label><br>
+      <label><input type="radio" name="p4" value="object"> Object</label><br>
+      <label><input type="radio" name="p4" value="string"> String</label>
+
+      <h3>5. Se usa para guardar una clave y un valor:</h3>
+      <label><input type="radio" name="p5" value="object"> Object</label><br>
+      <label><input type="radio" name="p5" value="array"> Array</label><br>
+      <label><input type="radio" name="p5" value="let"> let</label>
+
+      <h3>6. ¿Qué comando sirve para imprimir pero en la consola?</h3>
+      <label><input type="radio" name="p6" value="console.log"> console.log</label><br>
+      <label><input type="radio" name="p6" value="document.write"> document.write</label><br>
+      <label><input type="radio" name="p6" value="alert"> alert</label>
+
+      <h3>7. Ciclo que se ejecuta mientras se cumpla la condición:</h3>
+      <label><input type="radio" name="p7" value="while"> while</label><br>
+      <label><input type="radio" name="p7" value="for"> for</label><br>
+      <label><input type="radio" name="p7" value="switch"> switch</label>
+
+      <h3>8. Estructura que ejecuta opciones según el valor de una variable:</h3>
+      <label><input type="radio" name="p8" value="switch"> switch</label><br>
+      <label><input type="radio" name="p8" value="if"> if</label><br>
+      <label><input type="radio" name="p8" value="while"> while</label>
+
+      <h3>9. Forma correcta de llamar una función:</h3>
+      <label><input type="radio" name="p9" value="miFuncion()"> miFuncion()</label><br>
+      <label><input type="radio" name="p9" value="function miFuncion"> function miFuncion</label><br>
+      <label><input type="radio" name="p9" value="llamar miFuncion"> llamar miFuncion</label>
+
+      <h3>10. Lleva tres partes: variable, límite e incremento:</h3>
+      <label><input type="radio" name="p10" value="for"> for</label><br>
+      <label><input type="radio" name="p10" value="while"> while</label><br>
+      <label><input type="radio" name="p10" value="do-while"> do while</label>
+
+      <h3>11. Comando para imprimir desde carpeta raíz el archivo JS pero por consola:</h3>
+      <label><input type="radio" name="p11" value="node archivo.js"> node archivo.js</label><br>
+      <label><input type="radio" name="p11" value="run js"> run js</label><br>
+      <label><input type="radio" name="p11" value="js print"> js print</label><br>
+
+      <button type="button" id="btnCalificar">Ver calificación</button>
+      <button type="submit" id="btnEnviar">Enviar al profesor</button>
+  </form>
+
+  <p id="resultado"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
